@@ -1,0 +1,11 @@
+(require 'multi-web-mode)
+(setq mweb-default-major-mode 'html-mode)
+(setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
+                  (javascript-mode "<script +\\(type=\"text/javascript\"\\|language=\"javascript\"\\)[^>]*>" "</script>")
+                  (html-mode "<<<[a-zA-Z]+" "^[a-zA-Z]+;\\|^[a-zA-Z]+\\s*)?;")
+                  (css-mode "<style +type=\"text/css\"[^>]*>" "</style>")))
+(setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
+
+;;(multi-web-global-mode 1)
+(add-to-list 'auto-mode-alist '("\\.php$" . multi-web-mode))
+(add-to-list 'auto-mode-alist '("\\.html$" . multi-web-mode))

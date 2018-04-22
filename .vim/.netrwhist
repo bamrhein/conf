@@ -1,0 +1,3 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/brent/git/testapp/node_modules/mongodb/node_modules/kerberos/build/Release'

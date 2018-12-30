@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Flip Text: Flip selection upside-down",
+        "command": "flip_text"
+    }
+]

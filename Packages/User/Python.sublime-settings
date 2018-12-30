@@ -1,0 +1,4 @@
+{
+    "ensure_newline_at_eof_on_save": true,
+    "indent_to_bracket": false
+}

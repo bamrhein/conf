@@ -1,5 +1,6 @@
 [
     { "command": "toggle_setting", "args": {"setting": "spell_check"}, "caption": "Spell Check", "checkbox": true },
     // { "command": "prompt_open_folder", "caption": "Open Folder…", "platform": "!OSX" },
-    // { "command": "prompt_open", "caption": "Open…", "platform": "OSX" }
+    // { "command": "prompt_open", "caption": "Open…", "platform": "OSX" },
+    { "command": "prompt_open_folder", "caption": "Open Folder…" }
 ]

@@ -40,4 +40,6 @@ function _jump {
     COMPREPLY=($(compgen -W '${marks[@]}' -- "$cur"))
     return 0
 }
+# '-a' configures completion for the alias 'j', which is set for Bash on the following line.
 complete -o default -F _jump jump -a j
+alias j='jump'

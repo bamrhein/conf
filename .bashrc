@@ -1,6 +1,10 @@
 ## Path additions
-# Added path to symlink for Python3 while P2 is still part of system.
-export PATH=/usr/local/mysql/bin:/opt:/opt/local/bin:/usr/local/git/bin:/usr/local/opt/python/libexec/bin:$PATH
+export PATH=/usr/local/mysql/bin:$PATH
+export PATH=/opt:$PATH
+export PATH=/opt/local/bin:$PATH
+export PATH=/usr/local/git/bin:$PATH
+# Added symlink for Python3 to PATH while Python2 is still part of system.
+export PATH=/usr/local/opt/python/libexec/bin:$PATH
 
 # Node dev
 export NODE_PATH="./node_modules:/usr/local/lib/node_modules"
@@ -32,7 +36,8 @@ function unmark {
     rm -i "$MARKPATH/$1"
 }
 function marks {
-    \ls -l "$MARKPATH" | tail -n +2 | sed 's/  / /g' | cut -d' ' -f9- | awk -F ' -> ' '{printf "%-10s -> %s\n", $1, $2}'
+    \ls -l "$MARKPATH" | tail -n +2 | sed 's/  / /g' | cut -d' ' -f9- \
+    | awk -F ' -> ' '{printf "%-10s -> %s\n", $1, $2}'
 }
 function _jump {
     local cur=${COMP_WORDS[COMP_CWORD]}
@@ -40,6 +45,7 @@ function _jump {
     COMPREPLY=($(compgen -W '${marks[@]}' -- "$cur"))
     return 0
 }
-# '-a' configures completion for the alias 'j', which is set for Bash on the following line.
+# '-a' configures completion for the alias 'j', which is set for Bash on
+# the following line.
 complete -o default -F _jump jump -a j
 alias j='jump'

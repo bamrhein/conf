@@ -40,4 +40,4 @@ function _jump {
     COMPREPLY=($(compgen -W '${marks[@]}' -- "$cur"))
     return 0
 }
-complete -o default -o nospace -F _jump jump
+complete -o default -F _jump jump -a j

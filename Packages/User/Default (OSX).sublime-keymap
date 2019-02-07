@@ -1,9 +1,9 @@
 [
-	// Package: Expand Selection to Quotes
+    // Package: Expand Selection to Quotes
     { "keys": ["ctrl+'"], "command": "expand_selection_to_quotes" },
     { "keys": ["super+'"], "command": "expand_selection_to_quotes" },
 
     // Side Bar Toggles
-	{ "keys": ["super+k", "super+b"], "command": "toggle_side_bar" },
-	{ "keys": ["super+k", "super+f"], "command": "toggle_show_open_files" },
+    { "keys": ["super+k", "super+b"], "command": "toggle_side_bar" },
+    { "keys": ["super+k", "super+f"], "command": "toggle_show_open_files" },
 ]

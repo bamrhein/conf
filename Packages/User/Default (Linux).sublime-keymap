@@ -49,5 +49,12 @@
     { "keys": ["ctrl+alt+i"], "command": "reindent" },
 
     // Wrap at 120 chars
-    { "keys": ["ctrl+k", "ctrl+w"], "command": "wrap_lines", "args": {"width": 120} }
+    { "keys": ["ctrl+k", "ctrl+w"], "command": "wrap_lines", "args": {"width": 120} },
+
+    // Side Bar Toggles
+    { "keys": ["ctrl+k", "ctrl+b"], "command": "toggle_side_bar" },
+    { "keys": ["ctrl+k", "ctrl+f"], "command": "toggle_show_open_files" },
+
+    // Package: Expand Selection to Quotes
+    { "keys": ["ctrl+'"], "command": "expand_selection_to_quotes" },
 ]

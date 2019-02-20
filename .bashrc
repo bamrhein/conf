@@ -14,7 +14,7 @@ export NODE_PATH="./node_modules:/usr/local/lib/node_modules"
 alias ls='ls -hFG'
 alias ll='ls -lhFG'
 alias lla='ls -lahFG'
-alias grep='grep -G'
+alias grep='grep -G --color=always'
 alias updatedb='launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist'
 
 

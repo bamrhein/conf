@@ -6,6 +6,9 @@ export PATH=/usr/local/git/bin:$PATH
 # Added symlink for Python3 to PATH while Python2 is still part of system.
 export PATH=/usr/local/opt/python/libexec/bin:$PATH
 
+# macOS VSCode
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+
 # Node dev
 export NODE_PATH="./node_modules:/usr/local/lib/node_modules"
 
@@ -20,6 +23,9 @@ alias updatedb='launchctl load -w /System/Library/LaunchDaemons/com.apple.locate
 
 ## Binds
 bind 'set completion-ignore-case on'
+
+## Do not add commands that start with a space to history
+HISTCONTROL=ignorespace
 
 
 ## Set up directory marking commands.
